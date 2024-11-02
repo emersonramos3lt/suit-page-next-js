@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --secondary-font: serif;
+}
+
+p {
+  font-family: var(--secondary-font);
+}
+
+.h1-header {
+  font-size: 12rem;
+}
+
+.content-header {
+  max-width: 97%;
+  margin: auto;
+}
+
+/* SPAN */
+.date, .more {
+  font-family: var(--secondary-font);
+  font-style: italic;
+}
+
+/* SHOP GRID */
+.shop-grid {
+  max-width: 90%;
+}
+
+.grid-footer-shop {
+  margin-bottom: 14rem;
+}
+
+/* BUTTON - ShopSection */
+button {
+  border: 2px solid #000;
+  border-style: dotted;
+}
+
+/* FOOTER  */
+input {
+  all: unset;
+  border-bottom: 1px solid #fff;
+  padding: .4rem;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.footer-text {
+  width: 90%;
+}
+
+/* RESPONSIVE */
+@media(max-width: 800px) {
+  /* Header */
+  .h1-header {
+    font-size: 5rem;
+  }
+
+  header {
+    padding-bottom: 10rem;
+  }
+
+  .content-header {
+    width: 95%;
+    padding-top: 8rem;
+  }
+
+  /* SECTIONS */
+  .center-section {
+    max-width: 90%;
+  }
+
+  .shop-section {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  /* CenterContent */
+  .content-grid {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .last {
+    margin-bottom: 0;
+  }
+
+  /* ShopSection */
+  .shop-grid {
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .image {
+    max-width: 40px;
+  }
+
+  .grid-footer-shop {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 5rem;
+  }
+
+  .column {
+    margin-bottom: 1rem;
+  }
+
+  .footer-text {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .footer-text input {
+    background-color: #fff;
+    color: #000;
+  }
+
+  .footer-text input::placeholder {
+    color: #000;
+  }
+
+  .footer-text button {
+    margin-top: 1rem;
+  }
+}
